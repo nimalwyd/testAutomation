@@ -1,0 +1,156 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "# with tables"
+          }
+        ],
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": "flight-portal-full-test;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12523554004,
+              "error_message": "cucumber.api.PendingException: TODO: implement me\r\n\tat stepDefinitions.fulltestStepDefinitionsWithTables.home_page_is_loaded_with_origin_and_destination_ok(fulltestStepDefinitionsWithTables.java:34)\r\n\tat ✽.Given home page is loaded with origin and destination_ok(C:/Users/nimal/eclipse-workspace/AutomationNimal/src/main/java/com/crm/qa/feature/fulltestWithTables.feature:4)\r\n",
+              "status": "pending"
+            },
+            "line": 4,
+            "name": "home page is loaded with origin and destination_ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.home_page_is_loaded_with_origin_and_destination_ok(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "yyz",
+                  "BLR"
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "asc",
+                  "reg"
+                ],
+                "line": 6
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "homepage title is verified ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.homepage_title_is_verified_ok()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "round trip journey is selected ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.round_trip_journey_is_selected_ok()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "one adult is selected ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.one_adult_is_selected_ok()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "economy is selected ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.economy_is_selected_ok()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "origin is entered as YYZ ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.origin_is_entered_as_YYZ_ok()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "destination is entered as BLR ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.destination_is_entered_as_BLR_ok()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "departure date is selcted ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.departure_date_is_selcted_ok()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Arrival date is selected ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.arrival_date_is_selected_ok()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "Search button is clicked ok",
+            "match": {
+              "location": "fulltestStepDefinitionsWithTables.search_button_is_clicked_ok()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "flight portal full test",
+    "description": "",
+    "id": "flight-portal-full-test",
+    "keyword": "Feature",
+    "uri": "C:/Users/nimal/eclipse-workspace/AutomationNimal/src/main/java/com/crm/qa/feature/fulltestWithTables.feature"
+  }
+]

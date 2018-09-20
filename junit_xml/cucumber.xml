@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="12.523554">
+<testcase classname="flight portal full test" name="" time="12.523554">
+<failure message="The scenario has pending or undefined step(s)"><![CDATA[Given home page is loaded with origin and destination_ok....................pending
+When homepage title is verified ok..........................................skipped
+Then round trip journey is selected ok......................................skipped
+Then one adult is selected ok...............................................skipped
+Then economy is selected ok.................................................skipped
+Then origin is entered as YYZ ok............................................skipped
+Then destination is entered as BLR ok.......................................skipped
+Then departure date is selcted ok...........................................skipped
+Then Arrival date is selected ok............................................skipped
+And Search button is clicked ok.............................................skipped
+]]></failure>
+</testcase>
+</testsuite>
