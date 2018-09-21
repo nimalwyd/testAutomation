@@ -1,7 +1,8 @@
+@FunctionalTest
 Feature: flight portal full test 
 # with tables
 
-@SmokeTest  @RegresstionTest
+@SmokeTest  @RegresstionTest @End2End
 Scenario: 
 	Given home page is loaded with origin and destination_ok 
 		|origin	   | destination |
@@ -17,7 +18,7 @@ Scenario:
 	Then Arrival date is selected ok 
 	And Search button is clicked ok 
 	
-	@SmokeTest
+	@SmokeTest 
 	Scenario: 
 	Given home page is loaded with origin and destination_ok 
 		|origin	   | destination |
