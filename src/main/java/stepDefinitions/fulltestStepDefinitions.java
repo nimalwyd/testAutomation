@@ -13,6 +13,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import com.crm.qa.base.TestBase;
 
 import cucumber.api.PendingException;
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -22,6 +24,22 @@ public class fulltestStepDefinitions {
 	
 WebDriver driver;
 
+
+@Before
+public void setUp()
+{
+
+	System.out.println("initial setup..");
+	
+}
+
+@After
+public void tearDown()
+{
+	System.out.println("final  setup..");
+
+	
+}
 
 
 @Given("^home page is loaded with \"(.*)\" and \"(.*)\"$")	
@@ -46,51 +64,43 @@ public void homepage_title_is_verified() throws Throwable {
 }
 
 @Then("^round trip journey is selected$")
-public void round_trip_journey_is_selected() throws Throwable {
+public void round_trip_journey_is_selected() {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Then("^one adult is selected$")
-public void one_adult_is_selected() throws Throwable {
+public void one_adult_is_selected() {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Then("^economy is selected$")
-public void economy_is_selected() throws Throwable {
+public void economy_is_selected()  {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Then("^origin is entered as YYZ$")
-public void origin_is_entered_as_YYZ() throws Throwable {
+public void origin_is_entered_as_YYZ() {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Then("^destination is entered as BLR$")
-public void destination_is_entered_as_BLR() throws Throwable {
+public void destination_is_entered_as_BLR()  {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Then("^departure date is selcted$")
-public void departure_date_is_selcted() throws Throwable {
+public void departure_date_is_selcted() {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Then("^Arrival date is selected$")
-public void arrival_date_is_selected() throws Throwable {
+public void arrival_date_is_selected()  {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Then("^Search button is clicked$")
-public void search_button_is_clicked() throws Throwable {
+public void search_button_is_clicked() {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 }
 */

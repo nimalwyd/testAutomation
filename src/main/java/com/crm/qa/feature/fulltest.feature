@@ -1,3 +1,4 @@
+@FunctionalTest
 Feature: flight portal full test
 # without example keyword 
 #  Scenario:
@@ -14,6 +15,7 @@ Feature: flight portal full test
    
    
 # with example keyword
+@SmokeTest  @RegresstionTest @End2End
 Scenario Outline:
     Given home page is loaded with "<origin>" and "<destination>"
     When homepage title is verified
