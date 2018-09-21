@@ -1,5 +1,7 @@
+@FunctionalTest
 Feature: flight portal full test
  # with tables
+ @SmokeTest  @RegressionTest  @End2End
 Scenario:
     Given home page is loaded with origin and destination_ok
     | yyz	   |  BLR        |
