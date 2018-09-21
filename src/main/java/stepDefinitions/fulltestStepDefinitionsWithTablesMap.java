@@ -1,25 +1,26 @@
-/*package stepDefinitions;
+package stepDefinitions;
 
 import java.util.List;
+import java.util.Map;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 import cucumber.api.DataTable;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-
-
-public class fulltestStepDefinitionsWithTables {
-//DataTable with list
-	WebDriver driver;
+public class fulltestStepDefinitionsWithTablesMap {
+// DataTable with Maps	
+WebDriver driver;
 	
 	@Given("^home page is loaded with origin and destination_ok$")
 	public void home_page_is_loaded_with_origin_and_destination_ok(DataTable arg1) throws Throwable {
-		List<List<String>> data = arg1.raw();
+		for( Map<String,String> data:  arg1.asMaps(String.class, String.class)) {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\NimalAutomationFramework\\chromedriver.exe");	
 		driver = new ChromeDriver(); 
@@ -30,9 +31,10 @@ public class fulltestStepDefinitionsWithTables {
 		Thread.sleep(1000);
 
 		List<WebElement> fromPlaceTextBox = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-smarty-wrapper')]//*[contains(@id,'-origin-airport')]"));
-		fromPlaceTextBox.get(0).sendKeys(data.get(0).get(0)); //0th row 0th column		
+		fromPlaceTextBox.get(0).sendKeys(data.get("origin")); //0th row 0th column		
 		
 	    throw new PendingException();
+		}
 	}
 
 
@@ -91,6 +93,4 @@ public void search_button_is_clicked_ok() throws Throwable {
 }
 
 
-
 }
-*/
