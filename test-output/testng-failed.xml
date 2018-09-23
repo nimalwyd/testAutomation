@@ -10,7 +10,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="HomePageTestcase" invocation-numbers="1 3 4"/>
+          <include name="HomePageTestcase"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
     </classes>
