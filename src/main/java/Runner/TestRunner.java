@@ -23,7 +23,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\java\\com\\crm\\qa\\feature\\fulltestMap.feature", //the path of the feature files
+		features = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\java\\com\\crm\\qa\\feature\\fulltest.feature", //the path of the feature files
 		glue={"stepDefinitions"}, //the path of the step definition files, make sure all other step definition files are commented
 		format= {"pretty","html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"}, //to generate different types of reporting
 		monochrome = true, //display the console output in a proper readable format

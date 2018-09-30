@@ -30,6 +30,10 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.TestBase;
 
@@ -66,13 +70,14 @@ public class TestUtil extends TestBase{
 		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
 		// System.out.println(sheet.getLastRowNum() + "--------" +
 		//sheet.getRow(0).getLastCellNum());
-		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+		for ( int i = 0; i < sheet.getLastRowNum(); i++) {
 			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
 				
 				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
-				//System.out.println(data[i][k]);
+				System.out.println(data[i][k]);
 				
 			}
+			
 		}
 		return data;
 	}
@@ -85,7 +90,24 @@ public class TestUtil extends TestBase{
 		
 		}
 	
+	public static void senddata(WebDriver driver, WebElement element, int timeunit, String value)
+	{
+		
+		element.clear();
+		new WebDriverWait(driver, timeunit).until(ExpectedConditions.visibilityOf(element));
+		 element.sendKeys(value);
+		 
+		
+	}
 
+	public static void clickOn(WebDriver driver, WebElement element, int timeunit)
+	{
+		
+		
+		new WebDriverWait(driver, timeunit).until(ExpectedConditions.visibilityOf(element));
+		 element.click();
+		
+	}
 	
 
 }

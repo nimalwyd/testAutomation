@@ -59,7 +59,7 @@ public void tearDown()
 	public void home_page_is_loaded_with_origin_and_destination_ok(DataTable arg1) throws Throwable {
 		List<List<String>> data = arg1.raw();
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\NimalAutomationFramework\\chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\chromedriver.exe");	
 		driver = new ChromeDriver(); 
 		driver.get("https://www.ca.kayak.com/flights");
 		Thread.sleep(1000);

@@ -57,7 +57,7 @@ public class FlightListPage extends TestBase {
 	
 	public void executeFlightListPage() throws InterruptedException
 	{
-			
+		
 		
 	WebDriverWait wait=new WebDriverWait(driver,20);
 	wait.until(ExpectedConditions.titleContains("Expedia"));

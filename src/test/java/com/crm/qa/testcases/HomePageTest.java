@@ -75,7 +75,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority=1,dataProvider="getCRMTestData")
 	public void HomePageTestcase(String TestCaseno, String ToBeExecuted, String onewayOrtwoway,String Origincode,String Destinationcode,String firstNameexcel,String lastnameexcel,String genderdata, String age, String dob, String Gender) throws InterruptedException, ParseException{
 		
-	homePage.executeTestHomePage(Origincode ,Destinationcode );
+	HomePage.executeTestHomePage(Origincode ,Destinationcode );
 	    //String winHandleBefore = driver.getWindowHandle();
 	    // Perform the click operation that opens new window       
 	 // Switch to new window opened & Perform the actions on new window

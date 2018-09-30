@@ -14,7 +14,7 @@
 * Date        Author      Ref    Revision (Date in YYYYMMDD format) 
 * 20180818    Nimal      1      added BDD,TDD characters to the framework 
 *
-|**********************************************************************/
+|**********************************************************************//*
 
 package stepDefinitions;
 
@@ -85,7 +85,7 @@ public void tearDown1()
 	public void home_page_is_loaded_with_origin_and_destination_ok(DataTable arg1) throws InterruptedException  {
 		for( Map<String,String> data:  arg1.asMaps(String.class, String.class)) {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\NimalAutomationFramework\\chromedriver.exe");	
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\chromedriver.exe");	
 		driver = new ChromeDriver(); 
 		driver.get("https://www.ca.kayak.com/flights");
 		Thread.sleep(1000);
@@ -153,3 +153,4 @@ public void search_button_is_clicked_ok() {
 
 
 }
+*/

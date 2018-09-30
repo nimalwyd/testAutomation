@@ -16,33 +16,22 @@
 *
 |**********************************************************************/
 
-/*package stepDefinitions;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+package stepDefinitions;
 import java.io.IOException;
-import java.util.List;
-import java.util.Properties;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import com.crm.qa.base.TestBase;
+import com.crm.qa.pages.HomePage;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
-import com.crm.qa.testcases.HomePageTest;
-public class fulltestStepDefinitions {
+
+
+public class fulltestStepDefinitions extends TestBase {
 	
-WebDriver driver;
-
-
+HomePage homepage;
 @Before
 public void setUp()
 {
@@ -54,31 +43,25 @@ public void setUp()
 @After
 public void tearDown()
 {
-	System.out.println("final  setup..");
-
+	driver.close();
 	
 }
 
 
 @Given("^home page is loaded with \"(.*)\" and \"(.*)\"$")	
-public void HomePageTitleIsVerfied(String fromPlacename, String toPlacename) throws IOException, InterruptedException
+public void HomePageisLoaded(String fromPlacename, String toPlacename) throws IOException, InterruptedException
 	{
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\NimalAutomationFramework\\chromedriver.exe");	
-	driver = new ChromeDriver(); 
-	driver.get("https://www.ca.kayak.com/flights");
+	
+	initialization();
+	homepage = new HomePage();
 	Thread.sleep(1000);
-	List<WebElement> fromPlace = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-display-inner')]"));
-	fromPlace.get(0).click();
-	Thread.sleep(1000);
-
-	List<WebElement> fromPlaceTextBox = driver.findElements(By.xpath("//*[contains(@id,'-origin-airport-smarty-wrapper')]//*[contains(@id,'-origin-airport')]"));
-	fromPlaceTextBox.get(0).sendKeys(fromPlacename);				
+	homepage.selectBasicsOfJourney();
+	homepage.SelectOriginAndDestination(fromPlacename, toPlacename);
 	}
 	
 @When("^homepage title is verified$")
 public void homepage_title_is_verified() throws Throwable {
     // Write code here that turns the phrase above into concrete actions
-    throw new PendingException();
 }
 
 @Then("^round trip journey is selected$")
@@ -121,4 +104,3 @@ public void search_button_is_clicked() {
     // Write code here that turns the phrase above into concrete actions
 }
 }
-*/

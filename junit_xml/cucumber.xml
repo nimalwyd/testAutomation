@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0">
-<testcase classname="flight portal full test" name="" time="0">
-<system-out><![CDATA[Given home page is loaded with origin and destination_ok....................skipped
-When homepage title is verified ok..........................................skipped
-Then round trip journey is selected ok......................................skipped
-Then one adult is selected ok...............................................skipped
-Then economy is selected ok.................................................skipped
-Then origin is entered as YYZ ok............................................skipped
-Then destination is entered as BLR ok.......................................skipped
-Then departure date is selcted ok...........................................skipped
-Then Arrival date is selected ok............................................skipped
-And Search button is clicked ok.............................................skipped
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="41.745857">
+<testcase classname="flight portal full test" name="_2" time="23.900916">
+<system-out><![CDATA[Given home page is loaded with "YYZ" and "BLR"..............................passed
+When homepage title is verified.............................................passed
+Then round trip journey is selected.........................................passed
+Then one adult is selected..................................................passed
+Then economy is selected....................................................passed
+Then origin is entered as YYZ...............................................passed
+Then destination is entered as BLR..........................................passed
+Then departure date is selcted..............................................passed
+Then Arrival date is selected...............................................passed
+And Search button is clicked................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="flight portal full test" name="" time="0">
-<system-out><![CDATA[Given home page is loaded with origin and destination_ok....................skipped
-When homepage title is verified ok..........................................skipped
-Then round trip journey is selected ok......................................skipped
-Then one adult is selected ok...............................................skipped
-Then economy is selected ok.................................................skipped
-Then origin is entered as YYZ ok............................................skipped
-Then destination is entered as BLR ok.......................................skipped
-Then departure date is selcted ok...........................................skipped
-Then Arrival date is selected ok............................................skipped
-And Search button is clicked ok.............................................skipped
+<testcase classname="flight portal full test" name="_3" time="17.844941">
+<system-out><![CDATA[Given home page is loaded with "MEL" and "YYZ"..............................passed
+When homepage title is verified.............................................passed
+Then round trip journey is selected.........................................passed
+Then one adult is selected..................................................passed
+Then economy is selected....................................................passed
+Then origin is entered as YYZ...............................................passed
+Then destination is entered as BLR..........................................passed
+Then departure date is selcted..............................................passed
+Then Arrival date is selected...............................................passed
+And Search button is clicked................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

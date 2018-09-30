@@ -29,6 +29,6 @@ Scenario Outline:
     And Search button is clicked
 Examples:
   			| origin  | destination  |
-  			| yyz	   |  BLR        |
-  			| asc	   |  reg        |
+  			| YYZ	   |  BLR        |
+  			| MEL	   |  YYZ        |
   			

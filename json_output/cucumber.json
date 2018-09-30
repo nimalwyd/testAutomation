@@ -3,313 +3,369 @@
     "line": 2,
     "elements": [
       {
-        "comments": [
+        "before": [
           {
-            "line": 3,
-            "value": "# with tables"
+            "result": {
+              "duration": 837472,
+              "status": "passed"
+            },
+            "match": {
+              "location": "fulltestStepDefinitions.setUp()"
+            }
           }
         ],
-        "line": 6,
+        "line": 32,
         "name": "",
         "description": "",
-        "id": "flight-portal-full-test;",
+        "id": "flight-portal-full-test;;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2143026504,
+              "status": "passed"
+            },
+            "match": {
+              "location": "fulltestStepDefinitions.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 21756538076,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "home page is loaded with origin and destination_ok",
+            "line": 20,
+            "name": "home page is loaded with \"YYZ\" and \"BLR\"",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.home_page_is_loaded_with_origin_and_destination_ok(DataTable)"
+              "arguments": [
+                {
+                  "val": "YYZ",
+                  "offset": 26
+                },
+                {
+                  "val": "BLR",
+                  "offset": 36
+                }
+              ],
+              "location": "fulltestStepDefinitions.HomePageisLoaded(String,String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "origin",
-                  "destination"
-                ],
-                "line": 8
-              },
-              {
-                "cells": [
-                  "yyz",
-                  "BLR"
-                ],
-                "line": 9
-              },
-              {
-                "cells": [
-                  "asc",
-                  "reg"
-                ],
-                "line": 10
-              }
+            "matchedColumns": [
+              0,
+              1
             ],
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 59585,
+              "status": "passed"
             },
-            "line": 11,
-            "name": "homepage title is verified ok",
+            "line": 21,
+            "name": "homepage title is verified",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.homepage_title_is_verified_ok()"
+              "location": "fulltestStepDefinitions.homepage_title_is_verified()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 43148,
+              "status": "passed"
             },
-            "line": 12,
-            "name": "round trip journey is selected ok",
+            "line": 22,
+            "name": "round trip journey is selected",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.round_trip_journey_is_selected_ok()"
+              "location": "fulltestStepDefinitions.round_trip_journey_is_selected()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 130264,
+              "status": "passed"
             },
-            "line": 13,
-            "name": "one adult is selected ok",
+            "line": 23,
+            "name": "one adult is selected",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.one_adult_is_selected_ok()"
+              "location": "fulltestStepDefinitions.one_adult_is_selected()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 41092,
+              "status": "passed"
             },
-            "line": 14,
-            "name": "economy is selected ok",
+            "line": 24,
+            "name": "economy is selected",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.economy_is_selected_ok()"
+              "location": "fulltestStepDefinitions.economy_is_selected()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 36573,
+              "status": "passed"
             },
-            "line": 15,
-            "name": "origin is entered as YYZ ok",
+            "line": 25,
+            "name": "origin is entered as YYZ",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.origin_is_entered_as_YYZ_ok()"
+              "location": "fulltestStepDefinitions.origin_is_entered_as_YYZ()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 59174,
+              "status": "passed"
             },
-            "line": 16,
-            "name": "destination is entered as BLR ok",
+            "line": 26,
+            "name": "destination is entered as BLR",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.destination_is_entered_as_BLR_ok()"
+              "location": "fulltestStepDefinitions.destination_is_entered_as_BLR()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 48900,
+              "status": "passed"
             },
-            "line": 17,
-            "name": "departure date is selcted ok",
+            "line": 27,
+            "name": "departure date is selcted",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.departure_date_is_selcted_ok()"
+              "location": "fulltestStepDefinitions.departure_date_is_selcted()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 47256,
+              "status": "passed"
             },
-            "line": 18,
-            "name": "Arrival date is selected ok",
+            "line": 28,
+            "name": "Arrival date is selected",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.arrival_date_is_selected_ok()"
+              "location": "fulltestStepDefinitions.arrival_date_is_selected()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 48079,
+              "status": "passed"
             },
-            "line": 19,
-            "name": "Search button is clicked ok",
+            "line": 29,
+            "name": "Search button is clicked",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.search_button_is_clicked_ok()"
+              "location": "fulltestStepDefinitions.search_button_is_clicked()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 5,
-            "name": "@SmokeTest"
-          },
-          {
-            "line": 5,
+            "line": 18,
             "name": "@RegresstionTest"
           },
           {
-            "line": 5,
+            "line": 18,
             "name": "@End2End"
+          },
+          {
+            "line": 1,
+            "name": "@FunctionalTest"
+          },
+          {
+            "line": 18,
+            "name": "@SmokeTest"
           }
         ]
       },
       {
-        "line": 22,
+        "before": [
+          {
+            "result": {
+              "duration": 1140737,
+              "status": "passed"
+            },
+            "match": {
+              "location": "fulltestStepDefinitions.setUp()"
+            }
+          }
+        ],
+        "line": 33,
         "name": "",
         "description": "",
-        "id": "flight-portal-full-test;",
+        "id": "flight-portal-full-test;;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 304262068,
+              "status": "passed"
+            },
+            "match": {
+              "location": "fulltestStepDefinitions.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 17539135176,
+              "status": "passed"
             },
-            "line": 23,
-            "name": "home page is loaded with origin and destination_ok",
+            "line": 20,
+            "name": "home page is loaded with \"MEL\" and \"YYZ\"",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.home_page_is_loaded_with_origin_and_destination_ok(DataTable)"
+              "arguments": [
+                {
+                  "val": "MEL",
+                  "offset": 26
+                },
+                {
+                  "val": "YYZ",
+                  "offset": 36
+                }
+              ],
+              "location": "fulltestStepDefinitions.HomePageisLoaded(String,String)"
             },
-            "rows": [
-              {
-                "cells": [
-                  "origin",
-                  "destination"
-                ],
-                "line": 24
-              },
-              {
-                "cells": [
-                  "yyz",
-                  "BLR"
-                ],
-                "line": 25
-              },
-              {
-                "cells": [
-                  "asc",
-                  "reg"
-                ],
-                "line": 26
-              }
+            "matchedColumns": [
+              0,
+              1
             ],
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 41504,
+              "status": "passed"
             },
-            "line": 27,
-            "name": "homepage title is verified ok",
+            "line": 21,
+            "name": "homepage title is verified",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.homepage_title_is_verified_ok()"
+              "location": "fulltestStepDefinitions.homepage_title_is_verified()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 44380,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "round trip journey is selected",
+            "match": {
+              "location": "fulltestStepDefinitions.round_trip_journey_is_selected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 64927,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "one adult is selected",
+            "match": {
+              "location": "fulltestStepDefinitions.one_adult_is_selected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51777,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "economy is selected",
+            "match": {
+              "location": "fulltestStepDefinitions.economy_is_selected()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36572,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "origin is entered as YYZ",
+            "match": {
+              "location": "fulltestStepDefinitions.origin_is_entered_as_YYZ()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 33696,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "destination is entered as BLR",
+            "match": {
+              "location": "fulltestStepDefinitions.destination_is_entered_as_BLR()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 36983,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "departure date is selcted",
+            "match": {
+              "location": "fulltestStepDefinitions.departure_date_is_selcted()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 39038,
+              "status": "passed"
             },
             "line": 28,
-            "name": "round trip journey is selected ok",
+            "name": "Arrival date is selected",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.round_trip_journey_is_selected_ok()"
+              "location": "fulltestStepDefinitions.arrival_date_is_selected()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 53831,
+              "status": "passed"
             },
             "line": 29,
-            "name": "one adult is selected ok",
+            "name": "Search button is clicked",
             "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.one_adult_is_selected_ok()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 30,
-            "name": "economy is selected ok",
-            "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.economy_is_selected_ok()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "origin is entered as YYZ ok",
-            "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.origin_is_entered_as_YYZ_ok()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 32,
-            "name": "destination is entered as BLR ok",
-            "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.destination_is_entered_as_BLR_ok()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 33,
-            "name": "departure date is selcted ok",
-            "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.departure_date_is_selcted_ok()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 34,
-            "name": "Arrival date is selected ok",
-            "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.arrival_date_is_selected_ok()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 35,
-            "name": "Search button is clicked ok",
-            "match": {
-              "location": "fulltestStepDefinitionsWithTablesMap.search_button_is_clicked_ok()"
+              "location": "fulltestStepDefinitions.search_button_is_clicked()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 21,
+            "line": 18,
+            "name": "@RegresstionTest"
+          },
+          {
+            "line": 18,
+            "name": "@End2End"
+          },
+          {
+            "line": 1,
+            "name": "@FunctionalTest"
+          },
+          {
+            "line": 18,
             "name": "@SmokeTest"
           }
         ]
@@ -319,7 +375,7 @@
     "description": "",
     "id": "flight-portal-full-test",
     "keyword": "Feature",
-    "uri": "C:/Users/nimal/eclipse-workspace/AutomationNimal/src/main/java/com/crm/qa/feature/fulltestMap.feature",
+    "uri": "C:/Users/nimal/eclipse-workspace/AutomationNimal/src/main/java/com/crm/qa/feature/fulltest.feature",
     "tags": [
       {
         "line": 1,

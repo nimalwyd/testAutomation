@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/nimal/eclipse-workspace/AutomationNimal/src/main/java/com/crm/qa/feature/fulltestMap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/nimal/eclipse-workspace/AutomationNimal/src/main/java/com/crm/qa/feature/fulltest.feature");
 formatter.feature({
   "line": 2,
   "name": "flight portal full test",
@@ -12,312 +12,499 @@ formatter.feature({
     }
   ]
 });
-formatter.scenario({
+formatter.scenarioOutline({
   "comments": [
     {
       "line": 3,
-      "value": "# with tables"
+      "value": "# without example keyword"
+    },
+    {
+      "line": 4,
+      "value": "#  Scenario:"
+    },
+    {
+      "line": 5,
+      "value": "#    Given home page is loaded with \"YYZ\" and \"BLR\""
+    },
+    {
+      "line": 6,
+      "value": "#    When homepage title is verified"
+    },
+    {
+      "line": 7,
+      "value": "#    Then round trip journey is selected"
+    },
+    {
+      "line": 8,
+      "value": "#    Then one adult is selected"
+    },
+    {
+      "line": 9,
+      "value": "#    Then economy is selected"
+    },
+    {
+      "line": 10,
+      "value": "#    Then origin is entered as YYZ"
+    },
+    {
+      "line": 11,
+      "value": "#    Then destination is entered as BLR"
+    },
+    {
+      "line": 12,
+      "value": "#    Then departure date is selcted"
+    },
+    {
+      "line": 13,
+      "value": "#    Then Arrival date is selected"
+    },
+    {
+      "line": 14,
+      "value": "#    And Search button is clicked"
+    },
+    {
+      "line": 17,
+      "value": "# with example keyword"
     }
   ],
-  "line": 6,
+  "line": 19,
   "name": "",
   "description": "",
   "id": "flight-portal-full-test;",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 5,
+      "line": 18,
       "name": "@SmokeTest"
     },
     {
-      "line": 5,
+      "line": 18,
       "name": "@RegresstionTest"
     },
     {
-      "line": 5,
+      "line": 18,
       "name": "@End2End"
     }
   ]
 });
 formatter.step({
-  "line": 7,
-  "name": "home page is loaded with origin and destination_ok",
+  "line": 20,
+  "name": "home page is loaded with \"\u003corigin\u003e\" and \"\u003cdestination\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 21,
+  "name": "homepage title is verified",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "round trip journey is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "one adult is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "economy is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "origin is entered as YYZ",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "destination is entered as BLR",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "departure date is selcted",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "Arrival date is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "Search button is clicked",
+  "keyword": "And "
+});
+formatter.examples({
+  "line": 30,
+  "name": "",
+  "description": "",
+  "id": "flight-portal-full-test;;",
   "rows": [
     {
       "cells": [
         "origin",
         "destination"
       ],
-      "line": 8
+      "line": 31,
+      "id": "flight-portal-full-test;;;1"
     },
     {
       "cells": [
-        "yyz",
+        "YYZ",
         "BLR"
       ],
-      "line": 9
+      "line": 32,
+      "id": "flight-portal-full-test;;;2"
     },
     {
       "cells": [
-        "asc",
-        "reg"
+        "MEL",
+        "YYZ"
       ],
-      "line": 10
+      "line": 33,
+      "id": "flight-portal-full-test;;;3"
     }
   ],
-  "keyword": "Given "
+  "keyword": "Examples"
 });
-formatter.step({
-  "line": 11,
-  "name": "homepage title is verified ok",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 12,
-  "name": "round trip journey is selected ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 13,
-  "name": "one adult is selected ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "economy is selected ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 15,
-  "name": "origin is entered as YYZ ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
-  "name": "destination is entered as BLR ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 17,
-  "name": "departure date is selcted ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 18,
-  "name": "Arrival date is selected ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 19,
-  "name": "Search button is clicked ok",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.home_page_is_loaded_with_origin_and_destination_ok(DataTable)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.homepage_title_is_verified_ok()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.round_trip_journey_is_selected_ok()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.one_adult_is_selected_ok()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.economy_is_selected_ok()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.origin_is_entered_as_YYZ_ok()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.destination_is_entered_as_BLR_ok()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.departure_date_is_selcted_ok()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.arrival_date_is_selected_ok()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.search_button_is_clicked_ok()"
-});
-formatter.result({
-  "status": "skipped"
+formatter.before({
+  "duration": 837472,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 22,
+  "line": 32,
   "name": "",
   "description": "",
-  "id": "flight-portal-full-test;",
+  "id": "flight-portal-full-test;;;2",
   "type": "scenario",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 21,
+      "line": 18,
+      "name": "@RegresstionTest"
+    },
+    {
+      "line": 18,
+      "name": "@End2End"
+    },
+    {
+      "line": 1,
+      "name": "@FunctionalTest"
+    },
+    {
+      "line": 18,
       "name": "@SmokeTest"
     }
   ]
 });
 formatter.step({
-  "line": 23,
-  "name": "home page is loaded with origin and destination_ok",
-  "rows": [
-    {
-      "cells": [
-        "origin",
-        "destination"
-      ],
-      "line": 24
-    },
-    {
-      "cells": [
-        "yyz",
-        "BLR"
-      ],
-      "line": 25
-    },
-    {
-      "cells": [
-        "asc",
-        "reg"
-      ],
-      "line": 26
-    }
+  "line": 20,
+  "name": "home page is loaded with \"YYZ\" and \"BLR\"",
+  "matchedColumns": [
+    0,
+    1
   ],
   "keyword": "Given "
 });
 formatter.step({
-  "line": 27,
-  "name": "homepage title is verified ok",
+  "line": 21,
+  "name": "homepage title is verified",
   "keyword": "When "
 });
 formatter.step({
+  "line": 22,
+  "name": "round trip journey is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "one adult is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "economy is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "origin is entered as YYZ",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "destination is entered as BLR",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "departure date is selcted",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 28,
-  "name": "round trip journey is selected ok",
+  "name": "Arrival date is selected",
   "keyword": "Then "
 });
 formatter.step({
   "line": 29,
-  "name": "one adult is selected ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 30,
-  "name": "economy is selected ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 31,
-  "name": "origin is entered as YYZ ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 32,
-  "name": "destination is entered as BLR ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 33,
-  "name": "departure date is selcted ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 34,
-  "name": "Arrival date is selected ok",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 35,
-  "name": "Search button is clicked ok",
+  "name": "Search button is clicked",
   "keyword": "And "
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.home_page_is_loaded_with_origin_and_destination_ok(DataTable)"
+  "arguments": [
+    {
+      "val": "YYZ",
+      "offset": 26
+    },
+    {
+      "val": "BLR",
+      "offset": 36
+    }
+  ],
+  "location": "fulltestStepDefinitions.HomePageisLoaded(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 21756538076,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.homepage_title_is_verified_ok()"
+  "location": "fulltestStepDefinitions.homepage_title_is_verified()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 59585,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.round_trip_journey_is_selected_ok()"
+  "location": "fulltestStepDefinitions.round_trip_journey_is_selected()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 43148,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.one_adult_is_selected_ok()"
+  "location": "fulltestStepDefinitions.one_adult_is_selected()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 130264,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.economy_is_selected_ok()"
+  "location": "fulltestStepDefinitions.economy_is_selected()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 41092,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.origin_is_entered_as_YYZ_ok()"
+  "location": "fulltestStepDefinitions.origin_is_entered_as_YYZ()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 36573,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.destination_is_entered_as_BLR_ok()"
+  "location": "fulltestStepDefinitions.destination_is_entered_as_BLR()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 59174,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.departure_date_is_selcted_ok()"
+  "location": "fulltestStepDefinitions.departure_date_is_selcted()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48900,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.arrival_date_is_selected_ok()"
+  "location": "fulltestStepDefinitions.arrival_date_is_selected()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 47256,
+  "status": "passed"
 });
 formatter.match({
-  "location": "fulltestStepDefinitionsWithTablesMap.search_button_is_clicked_ok()"
+  "location": "fulltestStepDefinitions.search_button_is_clicked()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 48079,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 2143026504,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 1140737,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 33,
+  "name": "",
+  "description": "",
+  "id": "flight-portal-full-test;;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 18,
+      "name": "@RegresstionTest"
+    },
+    {
+      "line": 18,
+      "name": "@End2End"
+    },
+    {
+      "line": 1,
+      "name": "@FunctionalTest"
+    },
+    {
+      "line": 18,
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 20,
+  "name": "home page is loaded with \"MEL\" and \"YYZ\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 21,
+  "name": "homepage title is verified",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "round trip journey is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 23,
+  "name": "one adult is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 24,
+  "name": "economy is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 25,
+  "name": "origin is entered as YYZ",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 26,
+  "name": "destination is entered as BLR",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 27,
+  "name": "departure date is selcted",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 28,
+  "name": "Arrival date is selected",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 29,
+  "name": "Search button is clicked",
+  "keyword": "And "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "MEL",
+      "offset": 26
+    },
+    {
+      "val": "YYZ",
+      "offset": 36
+    }
+  ],
+  "location": "fulltestStepDefinitions.HomePageisLoaded(String,String)"
+});
+formatter.result({
+  "duration": 17539135176,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.homepage_title_is_verified()"
+});
+formatter.result({
+  "duration": 41504,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.round_trip_journey_is_selected()"
+});
+formatter.result({
+  "duration": 44380,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.one_adult_is_selected()"
+});
+formatter.result({
+  "duration": 64927,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.economy_is_selected()"
+});
+formatter.result({
+  "duration": 51777,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.origin_is_entered_as_YYZ()"
+});
+formatter.result({
+  "duration": 36572,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.destination_is_entered_as_BLR()"
+});
+formatter.result({
+  "duration": 33696,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.departure_date_is_selcted()"
+});
+formatter.result({
+  "duration": 36983,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.arrival_date_is_selected()"
+});
+formatter.result({
+  "duration": 39038,
+  "status": "passed"
+});
+formatter.match({
+  "location": "fulltestStepDefinitions.search_button_is_clicked()"
+});
+formatter.result({
+  "duration": 53831,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 304262068,
+  "status": "passed"
 });
 });
