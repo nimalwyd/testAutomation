@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [kayal site tese]" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [FREE CRM Application Test Automation Test Suite]">
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
-  <test name="test firefox browser(failed)" parallel="tests">
-    <parameter name="browser" value="firefox"/>
+  <test name="Free CRM App Test Cases(failed)">
     <classes>
       <class name="com.crm.qa.testcases.HomePageTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="HomePageTestcase" invocation-numbers="0"/>
+          <include name="HomePageTestcase" invocation-numbers="0 1 2 4 5 7 8"/>
         </methods>
       </class> <!-- com.crm.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- test firefox browser(failed) -->
-  <test name="test chrome browser(failed)" parallel="tests">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.crm.qa.testcases.HomePageTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="HomePageTestcase" invocation-numbers="0 1 2"/>
-        </methods>
-      </class> <!-- com.crm.qa.testcases.HomePageTest -->
-    </classes>
-  </test> <!-- test chrome browser(failed) -->
-</suite> <!-- Failed suite [kayal site tese] -->
+  </test> <!-- Free CRM App Test Cases(failed) -->
+</suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->

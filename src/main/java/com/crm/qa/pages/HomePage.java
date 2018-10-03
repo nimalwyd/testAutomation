@@ -18,24 +18,19 @@
 
 package com.crm.qa.pages;
 
-import static org.testng.Assert.assertEquals;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import com.crm.qa.base.TestBase;
-import com.crm.qa.testcases.HomePageTest;
 import com.crm.qa.util.TestUtil;
+import com.qa.testcases.HomePageTest;
 
 public class HomePage extends TestBase {
 	HomePageTest homePageTest= new HomePageTest();
@@ -58,7 +53,7 @@ TestUtil testutil= new TestUtil();
 	public static
 	List<WebElement> FromCalendar;
 	// driver.findElement(By.xpath("//div[text()='19']")).click();
-	 @FindBy(xpath = "//div[contains(@id,'-jam-cal-201809')]//div[text()='29']")
+	 @FindBy(xpath = "//div[contains(@id,'-jam-cal-201810')]//div[text()='12']")
 	 public static
 	 List<WebElement> FromDate;
 	 
@@ -66,7 +61,7 @@ TestUtil testutil= new TestUtil();
 	 public static
 	 List<WebElement> ToCalendar;
 	 
-	 @FindBy(xpath = "//div[contains(@id,'-jam-cal-201810')]//div[text()='12']")
+	 @FindBy(xpath = "//div[contains(@id,'-jam-cal-201810')]//div[text()='19']")
 	 public static
 	 List<WebElement> ToDate;
 		 
