@@ -30,7 +30,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.crm.qa.base.TestBase;
 import com.crm.qa.util.TestUtil;
-import com.qa.testcases.HomePageTest;
 
 public class HomePage extends TestBase {
 	HomePageTest homePageTest= new HomePageTest();

@@ -16,7 +16,7 @@
 	*
 	**********************************************************************/
 
-package com.qa.testcases;
+package com.crm.qa.pages;
 
 import java.text.ParseException;
 
@@ -26,10 +26,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.TestBase;
-import com.crm.qa.pages.FlightListPage;
-import com.crm.qa.pages.FlightSelectionConfirmationPage;
-import com.crm.qa.pages.HomePage;
-import com.crm.qa.pages.PaymentPage;
 import com.crm.qa.util.TestUtil;
 
 public class HomePageTest extends TestBase {
