@@ -1,7 +1,7 @@
 /**********************************************************************;
-* Project           : Selenium webdriver Mobile automation front end Hybrid framework
+* Project           : Selenium webdriver automation front end Hybrid framework
 *
-* Program name      : AppiumAutomationFramework
+* Program name      : Hybrid AutomationFramework
 *
 * Author            : Nimal krishna
 *
