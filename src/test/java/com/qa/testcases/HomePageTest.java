@@ -20,6 +20,8 @@ package com.qa.testcases;
 
 import java.text.ParseException;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -39,11 +41,17 @@ public class HomePageTest extends TestBase {
 	PaymentPage paymentPage;
 	TestUtil testUtil;
 	String sheetName = "Sheet3";
+	String log4jConfPath = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\resources\\log4j.properties";
+
 	
 	
 	
 	public HomePageTest() {
 		super();
+		PropertyConfigurator.configure(log4jConfPath);
+
+		Logger log = Logger.getRootLogger();
+		log.info("starting test cases");
 	}
 
 	@BeforeMethod

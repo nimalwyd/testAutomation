@@ -4,7 +4,10 @@
 
 	<listeners>
 		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	
+		<listener class-name="com.qa.retryAnalyser.RuntimeRetry" />
 	</listeners>
+	
 
 
 	<test name="Free CRM App Test Cases">
