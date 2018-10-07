@@ -24,6 +24,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -42,9 +44,16 @@ public class TestBase {
 
 	public static TestUtil testUtil;
 	public static int currentTestCase=0;
+	String log4jConfPath = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\resources\\log4j.properties";
+	
 	
 	public TestBase(){
+		
+		
+		PropertyConfigurator.configure(log4jConfPath);
 
+		Logger log = Logger.getRootLogger();
+		log.info("starting test cases");
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/crm"
