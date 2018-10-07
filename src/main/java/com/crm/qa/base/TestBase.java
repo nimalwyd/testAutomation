@@ -44,15 +44,11 @@ public class TestBase {
 
 	public static TestUtil testUtil;
 	public static int currentTestCase=0;
-	String log4jConfPath = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\resources\\log4j.properties";
 	
 	
 	public TestBase(){
 		
 		
-		PropertyConfigurator.configure(log4jConfPath);
-		Logger log = Logger.getLogger(TestBase.class);
-		log.info("starting test cases");
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/crm"

@@ -41,12 +41,17 @@ public class HomePageTest extends TestBase {
 	PaymentPage paymentPage;
 	TestUtil testUtil;
 	String sheetName = "Sheet3";
+	String log4jConfPath = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\resources\\log4j.properties";
 
 	
 	
 	
 	public HomePageTest() {
 		super();
+
+		PropertyConfigurator.configure(log4jConfPath);
+		Logger log = Logger.getLogger(TestBase.class);
+		log.info("starting test cases");
 		
 	}
 
