@@ -51,8 +51,7 @@ public class TestBase {
 		
 		
 		PropertyConfigurator.configure(log4jConfPath);
-
-		Logger log = Logger.getRootLogger();
+		Logger log = Logger.getLogger(TestBase.class);
 		log.info("starting test cases");
 		try {
 			prop = new Properties();
