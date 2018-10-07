@@ -41,61 +41,56 @@ public class HomePageTest extends TestBase {
 	PaymentPage paymentPage;
 	TestUtil testUtil;
 	String sheetName = "Sheet3";
-	//String log4jConfPath = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\resources\\log4j.properties";
+	String log4jConfPath = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\resources\\log4j.properties";
 
-	
-	
-	
 	public HomePageTest() {
 		super();
 
-	//	PropertyConfigurator.configure(log4jConfPath);
-		//Logger log = Logger.getLogger(TestBase.class);
-	//	log.info("starting test cases");
-		
+		PropertyConfigurator.configure(log4jConfPath);
+		Logger log = Logger.getLogger(TestBase.class);
+		log.info("starting test cases");
+
 	}
 
 	@BeforeMethod
 	public void setUp() {
 		initialization();
 		testUtil = new TestUtil();
-		homePage= new HomePage();
+		homePage = new HomePage();
 		flightListPage = new FlightListPage();
 		flightSelectionConfirmationPage = new FlightSelectionConfirmationPage();
 		paymentPage = new PaymentPage();
-		//homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
-	}
-	
-	@DataProvider
-	public Object[][] getCRMTestData(){
-		Object data[][] = TestUtil.getTestData(sheetName);
-		return data;
-		
+		// homePage = loginPage.login(prop.getProperty("username"),
+		// prop.getProperty("password"));
 	}
 
-	
-	
-	@Test(priority=1,dataProvider="getCRMTestData")
-	public void HomePageTestcase(String TestCaseno, String ToBeExecuted, String onewayOrtwoway,String Origincode,String Destinationcode,String firstNameexcel,String lastnameexcel,String genderdata, String age, String dob, String Gender) throws InterruptedException, ParseException{
-		
-	HomePage.executeTestHomePage(Origincode ,Destinationcode );
-	    //String winHandleBefore = driver.getWindowHandle();
-	    // Perform the click operation that opens new window       
-	 // Switch to new window opened & Perform the actions on new window
-	
-	 flightListPage.executeFlightListPage();
-	// Thread.sleep(3000);
-	 flightSelectionConfirmationPage.executeFlightSelectionConfirmationPage();
-	paymentPage.executePaymentpage(firstNameexcel, lastnameexcel, Gender, dob);
-	  
-	   
+	@DataProvider
+	public Object[][] getCRMTestData() {
+		Object data[][] = TestUtil.getTestData(sheetName);
+		return data;
+
 	}
-	
+
+	@Test(priority = 1, dataProvider = "getCRMTestData")
+	public void HomePageTestcase(String TestCaseno, String ToBeExecuted, String onewayOrtwoway, String Origincode,
+			String Destinationcode, String firstNameexcel, String lastnameexcel, String genderdata, String age,
+			String dob, String Gender) throws InterruptedException, ParseException {
+
+		HomePage.executeTestHomePage(Origincode, Destinationcode);
+		// String winHandleBefore = driver.getWindowHandle();
+		// Perform the click operation that opens new window
+		// Switch to new window opened & Perform the actions on new window
+
+		flightListPage.executeFlightListPage();
+		// Thread.sleep(3000);
+		flightSelectionConfirmationPage.executeFlightSelectionConfirmationPage();
+		paymentPage.executePaymentpage(firstNameexcel, lastnameexcel, Gender, dob);
+
+	}
+
 	@AfterMethod
-	public void tearDown(){
+	public void tearDown() {
 		driver.quit();
 	}
-	
-	
 
 }
