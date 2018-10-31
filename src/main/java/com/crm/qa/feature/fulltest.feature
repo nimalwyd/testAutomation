@@ -13,7 +13,13 @@ Feature: flight portal full test
 #    Then Arrival date is selected
 #    And Search button is clicked
    
-   
+
+#Description: The purpose of this feature is to test the Background keyword
+ 
+#Background: User is Logged In
+#	Given I navigate to the login page
+#	When I submit username and password
+#	Then I should be logged in   
 # with example keyword
 @SmokeTest  @RegresstionTest @End2End
 Scenario Outline:

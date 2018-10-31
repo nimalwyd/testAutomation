@@ -11,7 +11,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="HomePageTestcase" invocation-numbers="1 1 1 1 2 2 3 4 4 5 5 8 8"/>
+          <include name="HomePageTestcase" invocation-numbers="1 1 2 2"/>
         </methods>
       </class> <!-- com.qa.testcases.HomePageTest -->
     </classes>

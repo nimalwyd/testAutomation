@@ -72,11 +72,11 @@ public class TestBase {
 		chrome_Profile.addArguments("disable-infobars");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", ".\\chromedriver.exe");	
 			driver = new ChromeDriver(chrome_Profile); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\nimal\\eclipse-workspace\\NimalAutomationFramework\\geckodriver.exe");	
+			System.setProperty("webdriver.gecko.driver", ".\\geckodriver.exe");	
 			driver = new FirefoxDriver(); 
 		}
 		

@@ -41,7 +41,7 @@ public class HomePageTest extends TestBase {
 	PaymentPage paymentPage;
 	TestUtil testUtil;
 	String sheetName = "Sheet3";
-	String log4jConfPath = "C:\\Users\\nimal\\eclipse-workspace\\AutomationNimal\\src\\main\\resources\\log4j.properties";
+	String log4jConfPath = ".\\src\\main\\resources\\log4j.properties";
 
 	public HomePageTest() {
 		super();
@@ -72,9 +72,11 @@ public class HomePageTest extends TestBase {
 	}
 
 	@Test(priority = 1, dataProvider = "getCRMTestData")
-	public void HomePageTestcase(String TestCaseno, String ToBeExecuted, String onewayOrtwoway, String Origincode,
+	public void HomePageTestcase(String TestCaseno,String ToBeExecuted, String onewayOrtwoway, String Origincode,
 			String Destinationcode, String firstNameexcel, String lastnameexcel, String genderdata, String age,
 			String dob, String Gender) throws InterruptedException, ParseException {
+		if(ToBeExecuted.equals("yes"))
+		{
 
 		HomePage.executeTestHomePage(Origincode, Destinationcode);
 		// String winHandleBefore = driver.getWindowHandle();
@@ -85,6 +87,8 @@ public class HomePageTest extends TestBase {
 		// Thread.sleep(3000);
 		flightSelectionConfirmationPage.executeFlightSelectionConfirmationPage();
 		paymentPage.executePaymentpage(firstNameexcel, lastnameexcel, Gender, dob);
+		}
+		
 
 	}
 
