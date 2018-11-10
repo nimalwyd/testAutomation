@@ -1,5 +1,12 @@
 @FunctionalTest
 Feature: flight portal full test
+
+##########APPROACH################
+#    Create only one step definition file which has the step definitons for all feature file steps
+#    in each feature file, ad the required steps which needs to be done to reach that page  is added in Bakground section,
+#    it only requires copy pasting steps from other feature files as there is only one step definition file.
+
+
 # without example keyword 
 #  Scenario:
 #    Given home page is loaded with "YYZ" and "BLR"
@@ -20,6 +27,8 @@ Feature: flight portal full test
 #	Given I navigate to the login page
 #	When I submit username and password
 #	Then I should be logged in   
+
+
 # with example keyword
 @SmokeTest  @RegresstionTest @End2End
 Scenario Outline:
